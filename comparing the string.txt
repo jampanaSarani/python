@@ -1,0 +1,4 @@
+s='hello'
+s1='hello swec'
+print(s is s1)
+
