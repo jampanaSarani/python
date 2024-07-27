@@ -1,0 +1,16 @@
+a,b,c=map(int,input().split(" "))
+s=[]
+s.append(a)
+s.append(b)
+s.append(c)
+for i in range(3):
+    for j in range(3):
+        for k in range(3):
+            if(i!=j and j!=k and k!=i):
+             x=str(s[i])
+             y=str(s[j])
+             z=str(s[k])
+             n=int(x+y+z)
+             if n<500:
+                print(n)
+

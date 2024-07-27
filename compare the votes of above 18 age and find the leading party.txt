@@ -1,0 +1,30 @@
+cong={
+      7:5,
+      18:22,
+      32:8,
+      71:5,
+      66:6
+      }
+bjp={
+      7:15,
+      18:20,
+      32:4,
+      71:9,
+      66:2
+      }
+congv=0
+bjpv=0
+for age,votes in cong.items():
+    if age>=18:
+        congv+=votes
+print(congv)
+for age,votes in bjp.items():
+    if age>=18:
+        bjpv+=votes
+print(bjpv)
+diff=abs(congv-bjpv)
+if bjpv>congv:
+    print("bjp is the leading party with the difference",diff)
+else:
+    print("congress is the leading paty with the difference",diff)
+
