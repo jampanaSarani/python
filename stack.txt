@@ -1,0 +1,19 @@
+class student:
+    branch='cse'
+    def __init__(self,name,roll,email,address):
+        self.name=name
+        self.roll=roll
+        self.address=address
+        self.email=email
+    def display(self):
+        print('name is:',self.name)
+        print('roll no is:',self.roll)
+        print('branch is:',student.branch)
+        print('address is: ',self.address)
+        print('email is: ',self.email)
+s1=student('sarani',101,'sarani.j25@gmail.com','hyderab')
+s2=student('ramya',102,'ramya@gmail.com','benguluru')
+s1.display()
+print()
+s2.display()
+
