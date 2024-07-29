@@ -1,0 +1,4 @@
+s='apple'
+s=sorted(s)
+print(' '.join(s))
+
