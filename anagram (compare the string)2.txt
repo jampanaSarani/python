@@ -1,0 +1,10 @@
+s1='tab'
+s2='bat'
+match=True
+for letter  in s2:
+    if letter not in s1:
+        match=False
+if match:
+    print("matching")
+else:
+    print("not matching") 

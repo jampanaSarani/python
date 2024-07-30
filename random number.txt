@@ -1,0 +1,21 @@
+import random
+ran=random.randint(1,10)
+print(ran)
+
+output:it print any random number every time u get different numbers
+-------------------------
+n chances until u get the random number
+
+
+import random
+ran=random.randint(1,12)
+while True:
+    guess=int(input('enter any number'))
+    if guess==ran:
+        print('congrates')
+        break
+    else:
+        continue
+    print('failed try next time')
+
+
