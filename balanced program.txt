@@ -1,0 +1,24 @@
+def check(s):
+    stack=[]
+    openings=['{','[','{']
+    brackets={
+        '(':')',
+        '[':']',
+        '{':'}',
+        }
+    for i in s:
+        if i in openings:
+            stack.append(i)
+        else:
+            if stack:
+                top=stack[-1]
+                if brackets[top]!=i:
+                    return 'NO'
+            else:
+                return 'NO'
+    if stack:
+        return 'NO'
+    else:
+        return 'yes'
+s='{} () []'
+print(check(s))
